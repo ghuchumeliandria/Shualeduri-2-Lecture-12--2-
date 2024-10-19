@@ -164,7 +164,9 @@ body {
   }
   .frst-sec-content {
     width: 327px;
-    margin: 0 auto;
+  }
+  .first-section{
+    align-items: flex-start;
   }
   .pre-order-btn {
     width: 150px;
