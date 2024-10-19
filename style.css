@@ -1,0 +1,174 @@
+@font-face {
+  font-family: "Barlow";
+  src: url(./fonts/Barlow-Light.ttf);
+}
+@font-face {
+  font-family: "Bold-Barlow";
+  src: url(./fonts/Barlow-Bold.ttf);
+}
+@font-face {
+  font-family: "Extra-Barlow";
+  src: url(./fonts/Barlow-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: "Medium-Barlow";
+  src: url(./fonts/Barlow-Medium.ttf);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Barlow";
+}
+body {
+  overflow-x: hidden;
+  padding: 60px 140px;
+}
+.main-container {
+  max-width: 1110px;
+  min-height: 100vh;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-logo {
+  width: 40px;
+  height: 40px;
+}
+.pre-order-btn {
+  width: 175px;
+  height: 58px;
+  border-radius: 8px;
+  background: #e8eff2;
+  color: #162542;
+  border: none;
+  font-size: 16px;
+  font-family: "Bold-Barlow";
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+/*  ------------------------------------------------------------------- FIRST SECTION ------------------------------------------------------------ */
+.main-first-section {
+  margin: 5em 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.first-section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+.frst-sec-content {
+  width: 445px;
+  height: 312px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.frst-sec-heading {
+  color: #162542;
+  font-family: "Extra-Barlow";
+  font-size: 56px;
+  line-height: 56px;
+  text-transform: uppercase;
+}
+.frst-sec-p {
+  color: #7b8bad;
+  font-family: "Medium-Barlow";
+  font-size: 18px;
+  line-height: 26px;
+}
+.frst-sec-content-btns {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.orange-btn {
+  background: #f16718;
+  color: white;
+}
+.frst-sec-btn-text {
+  color: #7b8bad;
+  font-family: "Bold-Barlow";
+  font-size: 16px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+.first-section-img {
+  width: 540px;
+  height: 480px;
+  border-radius: 20px;
+  background-image: url(./images/frst-keyobard.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.grey-box {
+  position: absolute;
+  top: 0;
+  right: -280px;
+}
+
+@media (max-width: 1440px) {
+  .grey-box {
+    right: -160px;
+  }
+}
+@media (max-width: 1000px) {
+  .grey-box {
+    display: none;
+  }
+  body {
+    padding: 40px 30px;
+  }
+  .frst-sec-heading {
+    font-size: 48px;
+  }
+  .frst-sec-p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 868px) and (min-width: 768px) {
+  .first-section-img {
+    width: 478px;
+    height: 425px;
+    margin-right: -50px;
+  }
+  .frst-sec-p {
+    width: 329px;
+  }
+}
+@media (max-width: 767px) {
+  .first-section {
+    flex-direction: column;
+  }
+  .first-section-img {
+    margin-right: -230px;
+  }
+}
+@media (max-width: 535px) and (min-width: 375px) {
+  body{
+    padding: 20px;
+  }
+  .main-container {
+    margin: 0 auto;
+  }
+  .frst-sec-content {
+    width: 327px;
+    margin: 0 auto;
+  }
+  .pre-order-btn {
+    width: 150px;
+    height: 48px;
+  }
+  
+}
