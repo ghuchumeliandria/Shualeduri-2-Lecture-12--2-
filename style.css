@@ -159,6 +159,9 @@ body {
   body{
     padding: 20px;
   }
+  .pre-order-btn{
+    font-size: 15px;
+  }
   .main-container {
     margin: 0 auto;
   }
