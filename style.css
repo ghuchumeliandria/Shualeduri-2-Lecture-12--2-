@@ -48,6 +48,16 @@ body {
   font-family: "Bold-Barlow";
   line-height: 26px;
   text-transform: uppercase;
+  transition: 0.5s;
+}
+.pre-order-btn:hover{
+  background: #162542;
+  color: white;
+}
+.pre-order-btn:active{
+  border: 2px solid #162542;
+  color: #162542;
+  background-color: white;
 }
 
 /*  ------------------------------------------------------------------- FIRST SECTION ------------------------------------------------------------ */
@@ -95,6 +105,14 @@ body {
 .orange-btn {
   background: #f16718;
   color: white;
+}
+.orange-btn:hover{
+  background: #FF9B62;
+}
+.orange-btn:active{
+  border: 2px solid #f16718;
+  background-color: white;
+  color: #f16718;
 }
 .frst-sec-btn-text {
   color: #7b8bad;
